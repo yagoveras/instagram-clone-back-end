@@ -3,7 +3,7 @@ import type { RespostaPadraoMsg } from '../../types/respostaPadrao';
 import type { CadastroRequisicao} from '../../types/CadastroRequisicao';
 import { UsuarioModel } from '../../models/UsuarioModel'
 import md5 from 'md5'
-import {conectarMongoDB}from '../../middlewares/conectarMongodb'
+import {conectarMongoDB}from '../../middlewares/conectarMongoDB'
 
 const endPointCadastro = 
     async ( req: NextApiRequest, res : NextApiResponse<RespostaPadraoMsg>)=>{
