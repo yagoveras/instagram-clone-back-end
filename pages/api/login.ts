@@ -20,7 +20,7 @@ const endPointLogin = async (
         const {login, senha} = req.body;
 
         const usuariosEncontrados = await UsuarioModel.find({email : login, senha : md5(senha)});
-        console.log(usuariosEncontrados)
+        
         if(usuariosEncontrados && usuariosEncontrados.length > 0){
             const usuarioEncontrado = usuariosEncontrados[0];
          
