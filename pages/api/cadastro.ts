@@ -33,6 +33,7 @@ const handler = nc()
                 return res.status(400).json({erro : 'Ja existe uma conta com o email informado'});
             }
 
+
             // enviar a imagem do multer para o cosmic
             const image = await uploadImagemCosmic(req);
     
